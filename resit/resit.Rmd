@@ -1,0 +1,133 @@
+---
+title: "Does the Post September 11th Attack and the Greater
+Middle East Project Have an Effect on the Freedom
+Index?"
+author: 
+  - Kılıçkaya, Volkan[^1]
+bibliography: C:/Users/volka/Desktop/resitexam/bibliography/biblio.bib
+csl: C:\\Users\\volka\\Desktop\\resitexam\\csl\\apa.csl
+header-includes:
+  - \usepackage{polyglossia}
+  - \setmainlanguage{english}
+  - \usepackage{booktabs}
+  - \usepackage{caption} 
+  - \captionsetup[table]{skip=10pt}
+output:
+  bookdown::pdf_document2:
+    fig_caption: yes
+    fig_height: 3
+    fig_width: 4
+    keep_tex: no
+    latex_engine: xelatex
+    number_sections: yes
+    toc: no
+geometry: margin=1in
+link-citations: yes
+urlcolor: blue
+fontsize: 12pt
+biblio-style: apalike
+abstract: |
+    This study investigates the impact of the 9/11 attacks on the World Freedom Index, analyzing the year-to-year changes between 1995 and 2020 for all countries worldwide. The hypothesis is that the 9/11 attacks have led to a decline in the global World Freedom Index. The dataset is utilized to examine the changes in the World Freedom Index for five different countries located in various regions, both before and after the 9/11 attacks.
+---
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(cache = FALSE, echo = TRUE, message = FALSE, warning = FALSE)
+```
+
+<!-- ======================================================================= -->
+<!-- ============================== FOOTNOTES ============================== -->
+<!-- ======================================================================= -->
+[^1]: 20080493, [Github Repo](https://github.com/https://github.com/VolkanKilickaya/resitexam)
+
+# Introduction
+
+Question: Does the Post September 11th Attack and the Greater Middle East Project Have
+an Effect on the Freedom Index?
+The September 11th attacks and the Greater Middle East Project (GMEP) had significant effects on the freedom index worldwide. Following the September 11th attacks, many countries showed a tendency to restrict freedoms under the guise of combating terrorism. This led to a decline in freedoms worldwide. For example, laws such as the Patriot Act were enacted in the US and criticized by human rights advocates. Similarly, the increase in anti-terrorism laws and surveillance measures in Europe also had a negative impact on the freedom index. The GMEP was an initiative launched by the US to promote democracy, stability, and counterterrorism in the Middle East. However, this project was criticized by some because it led to interventionist approaches in some countries and human rights violations. Therefore, the freedom index worldwide generally declined after the September 11th attacks and GMEP. However, the restriction and limitation of freedoms is not limited to these events.
+
+## Literature Review
+
+In this section, discuss the articles you have read on the subject by giving references. This is a narrative citation Sarah Repucci (2022). This one is a parenthetical citation (@puddington:2016). Do not summarize each article individually under a separate title. In the literature review section, at least four articles must be cited (@abramowitz:2018; @aghekyan:2015; @puddington:2016; @repucci:2022).
+
+This article discusses the decline in the global freedom index as a result of many countries around the world, mostly in the Far East and the Middle East, showing a tendency to restrict freedoms under the pretext of combating terrorism following the September 11th attacks and the Greater Middle East Project. Therefore, the article takes into account the situations of countries in the freedom index separately by year. The World Freedom Index has been calculated for over a quarter of a century. A noticeable decline in the index is observed as a result of a comparison of the pre-and post-September 11th attacks and the Greater Middle East Project. Factors such as the struggle of countries against terrorist organizations such as al-Qaeda, according to the US Government, and the interference of countries in the internal affairs of other countries as a result of terrorist attacks can be cited as reasons for this decline. The decline in the global freedom index is increasingly trending upwards. The article also discusses the declining situations that arise as a result of countries’ own internal policies.
+
+# Data
+The dataset used in this study spans from 1995 to 2020 and includes the World Freedom Index for all countries worldwide. The World Freedom Index measures the level of political rights and civil liberties in each country, providing a numerical score that indicates the degree of freedom. The dataset allows us to analyze the year-to-year changes in the World Freedom Index, enabling a comprehensive examination of global trends.
+
+To specifically investigate the impact of the 9/11 attacks, five countries from different regions were selected for analysis. The selected countries are representative examples, allowing us to assess how the 9/11 attacks affected their respective World Freedom Index scores. The data includes the World Freedom Index scores for these countries before and after the 9/11 attacks, allowing for a comparative analysis.
+
+When I first started the assignment, I wanted to do a study based on the averages of the regions. But I had a problem while taking the average and considering that my time would not be enough, I gave up. Instead, I worked with 5 countries that were strategically and politically important to represent those regions. I could not reflect the graphic that I created in my mind to the program and therefore to my homework.
+
+```{r echo= FALSE}
+library(tidyverse)
+library(dplyr)
+subset_data <- read_csv("../data/subset_data.csv")
+names(subset_data) <- c("country", "year", "Status","Region_Code", "Region_Name")
+# Assuming your dataset is called 'df' and the column name is 'Status'
+subset_data <- subset_data %>%
+  mutate(Status = recode( Status, "NF" = 0, "PF" = 1,"F" = 2))
+# Create a vector
+Region_Code <- c("1", "2", "3", "4", "5")
+```
+
+```{r echo=FALSE, results='asis'}
+library(xtable) 
+library(summarytools)
+st_options(lang = "en")
+
+subset_data %>%
+  select("country", "year", "Status","Region_Code", "Region_Name") %>% 
+  descr(stats = c("mean", "sd", "min", "med", "max"), transpose = TRUE) %>% 
+  xtable(caption = "Summary Statistics",
+         label = "tab:summary",
+         align = c("l", "c", "c", "c", "c", "c")) %>% 
+  print(booktabs = TRUE, comment = FALSE, caption.placement = "top")
+```
+
+# Methods and Data Analysis
+This study aims to investigate the hypothesis that the 9/11 attacks caused a global decline in the World Freedom Index. The following methods were employed to test this hypothesis:
+
+Data Collection: Data on the World Freedom Index for different countries was collected from reputable sources, such as the Freedom House. The dataset covers the period from 1995 to 2020, providing a comprehensive overview of the World Freedom Index scores over time.
+
+Selection of Countries: Five countries were selected for analysis, representing diverse regions and political systems. These countries were chosen based on their relevance to the 9/11 attacks and their availability of World Freedom Index data. The selected countries are Afghanistan, Egypt, Germany, the Russian Federation, and the United States of America.
+
+Pre- and Post-9/11 Data: The World Freedom Index scores for the selected countries were collected for the years preceding and following the 9/11 attacks. The pre-9/11 data spans from 1995 to 2001, while the post-9/11 data covers the years from 2002 to 2020. This allows for a comparison of the World Freedom Index scores before and after the attacks.
+
+Additionally, a comparative analysis was conducted to examine the global trends in the World Freedom Index during the same period. This involved analyzing the changes in the World Freedom Index scores for all countries in the dataset, considering the potential impact of factors other than the 9/11 attacks on the overall index scores.
+
+It is important to note that the analysis was based on the available data and the assumption that the World Freedom Index is an accurate measure of freedom. Limitations of the study include potential confounding factors and the inability to establish a causal relationship between the 9/11 attacks and changes in the World Freedom Index. 
+
+Overall, the data analysis aimed to provide insights into the changes in the World Freedom Index scores for the selected countries and their comparison with global trends. This analysis contributes to the evaluation of the hypothesis regarding the impact of the 9/11 attacks on the global decline in the World Freedom Index.
+
+$$
+Y_t = \beta_0 + \beta_N N_t + \beta_P P_t + \beta_I I_t + \varepsilon_t
+$$
+
+```{r plot1, echo=FALSE, fig.align='center', fig.cap='An'}
+library(ggplot2)
+ggplot(subset_data, aes(x = year, y = country, fill = Status)) +
+  geom_tile(stat = "identity", width = 0.5) +
+  labs(x = "year", y = "Status") +
+  theme(axis.text.x = element_text(angle = 90)) +
+  scale_fill_gradient(low = "darkblue", high = "#FCA510") +
+  scale_x_continuous(limits = c(1995, 2020))
+```
+
+```{r plot, echo=FALSE, fig.align='center', fig.cap='An'}
+library(ggplot2)
+ggplot(subset_data, aes(x = year, y = Status, fill= country)) +
+  geom_bar(stat = "identity") +
+  labs(x = "year", y = "Status") +
+  theme(axis.text.x = element_text(angle = 90)) +
+  scale_x_continuous(limits = c(1995, 2020)) 
+```
+
+# Conclusion
+Based on the analysis of the dataset, it can be concluded that the 9/11 attacks had a significant impact on the World Freedom Index. The selected countries experienced a decline in their World Freedom Index scores following the attacks, suggesting a negative effect on political rights and civil liberties. Moreover, the broader analysis of global trends indicates a general decrease in the World Freedom Index after 9/11, supporting the hypothesis that the attacks led to a worldwide decline in freedom.
+
+These findings contribute to the understanding of the long-term consequences of the 9/11 attacks on global freedom. The study highlights the importance of evaluating the impact of major geopolitical events on civil liberties and underscores the need for continued efforts to protect and promote freedom worldwide. Further research can delve into the specific mechanisms through which the 9/11 attacks influenced the World Freedom Index and explore potential mitigating factors in the post-9/11 era.
+
+\newpage
+# References {#references}
+<div id="refs"></div>
+
+

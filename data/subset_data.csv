@@ -1,0 +1,131 @@
+country,year,Status,Region_Code,Region_Name
+Afghanistan,1995,0,142,Asia
+Afghanistan,1996,0,142,Asia
+Afghanistan,1997,0,142,Asia
+Afghanistan,1998,0,142,Asia
+Afghanistan,1999,0,142,Asia
+Afghanistan,2000,0,142,Asia
+Afghanistan,2001,0,142,Asia
+Afghanistan,2002,0,142,Asia
+Afghanistan,2003,0,142,Asia
+Afghanistan,2004,0,142,Asia
+Afghanistan,2005,1,142,Asia
+Afghanistan,2006,1,142,Asia
+Afghanistan,2007,1,142,Asia
+Afghanistan,2008,0,142,Asia
+Afghanistan,2009,0,142,Asia
+Afghanistan,2010,0,142,Asia
+Afghanistan,2011,0,142,Asia
+Afghanistan,2012,0,142,Asia
+Afghanistan,2013,0,142,Asia
+Afghanistan,2014,0,142,Asia
+Afghanistan,2015,0,142,Asia
+Afghanistan,2016,0,142,Asia
+Afghanistan,2017,0,142,Asia
+Afghanistan,2018,0,142,Asia
+Afghanistan,2019,0,142,Asia
+Afghanistan,2020,0,142,Asia
+Egypt,1995,0,2,Africa
+Egypt,1996,0,2,Africa
+Egypt,1997,0,2,Africa
+Egypt,1998,0,2,Africa
+Egypt,1999,0,2,Africa
+Egypt,2000,0,2,Africa
+Egypt,2001,0,2,Africa
+Egypt,2002,0,2,Africa
+Egypt,2003,0,2,Africa
+Egypt,2004,0,2,Africa
+Egypt,2005,0,2,Africa
+Egypt,2006,0,2,Africa
+Egypt,2007,0,2,Africa
+Egypt,2008,0,2,Africa
+Egypt,2009,0,2,Africa
+Egypt,2010,0,2,Africa
+Egypt,2011,0,2,Africa
+Egypt,2012,1,2,Africa
+Egypt,2013,0,2,Africa
+Egypt,2014,0,2,Africa
+Egypt,2015,0,2,Africa
+Egypt,2016,0,2,Africa
+Egypt,2017,0,2,Africa
+Egypt,2018,0,2,Africa
+Egypt,2019,0,2,Africa
+Egypt,2020,0,2,Africa
+Germany,1995,2,150,Europe
+Germany,1996,2,150,Europe
+Germany,1997,2,150,Europe
+Germany,1998,2,150,Europe
+Germany,1999,2,150,Europe
+Germany,2000,2,150,Europe
+Germany,2001,2,150,Europe
+Germany,2002,2,150,Europe
+Germany,2003,2,150,Europe
+Germany,2004,2,150,Europe
+Germany,2005,2,150,Europe
+Germany,2006,2,150,Europe
+Germany,2007,2,150,Europe
+Germany,2008,2,150,Europe
+Germany,2009,2,150,Europe
+Germany,2010,2,150,Europe
+Germany,2011,2,150,Europe
+Germany,2012,2,150,Europe
+Germany,2013,2,150,Europe
+Germany,2014,2,150,Europe
+Germany,2015,2,150,Europe
+Germany,2016,2,150,Europe
+Germany,2017,2,150,Europe
+Germany,2018,2,150,Europe
+Germany,2019,2,150,Europe
+Germany,2020,2,150,Europe
+Russian Federation,1995,1,150,Europe
+Russian Federation,1996,1,150,Europe
+Russian Federation,1997,1,150,Europe
+Russian Federation,1998,1,150,Europe
+Russian Federation,1999,1,150,Europe
+Russian Federation,2000,1,150,Europe
+Russian Federation,2001,1,150,Europe
+Russian Federation,2002,1,150,Europe
+Russian Federation,2003,1,150,Europe
+Russian Federation,2004,0,150,Europe
+Russian Federation,2005,0,150,Europe
+Russian Federation,2006,0,150,Europe
+Russian Federation,2007,0,150,Europe
+Russian Federation,2008,0,150,Europe
+Russian Federation,2009,0,150,Europe
+Russian Federation,2010,0,150,Europe
+Russian Federation,2011,0,150,Europe
+Russian Federation,2012,0,150,Europe
+Russian Federation,2013,0,150,Europe
+Russian Federation,2014,0,150,Europe
+Russian Federation,2015,0,150,Europe
+Russian Federation,2016,0,150,Europe
+Russian Federation,2017,0,150,Europe
+Russian Federation,2018,0,150,Europe
+Russian Federation,2019,0,150,Europe
+Russian Federation,2020,0,150,Europe
+United States of America,1995,2,19,Americas
+United States of America,1996,2,19,Americas
+United States of America,1997,2,19,Americas
+United States of America,1998,2,19,Americas
+United States of America,1999,2,19,Americas
+United States of America,2000,2,19,Americas
+United States of America,2001,2,19,Americas
+United States of America,2002,2,19,Americas
+United States of America,2003,2,19,Americas
+United States of America,2004,2,19,Americas
+United States of America,2005,2,19,Americas
+United States of America,2006,2,19,Americas
+United States of America,2007,2,19,Americas
+United States of America,2008,2,19,Americas
+United States of America,2009,2,19,Americas
+United States of America,2010,2,19,Americas
+United States of America,2011,2,19,Americas
+United States of America,2012,2,19,Americas
+United States of America,2013,2,19,Americas
+United States of America,2014,2,19,Americas
+United States of America,2015,2,19,Americas
+United States of America,2016,2,19,Americas
+United States of America,2017,2,19,Americas
+United States of America,2018,2,19,Americas
+United States of America,2019,2,19,Americas
+United States of America,2020,2,19,Americas
